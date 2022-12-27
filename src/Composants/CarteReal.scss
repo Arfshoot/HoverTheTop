@@ -1,0 +1,37 @@
+.Carte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15em;
+
+    
+    
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;          
+    
+    
+    .img-box{
+        
+        width: 425px;
+        height: 365px;
+        margin: 1em;
+       
+
+        h3{
+            color:white;
+            text-align: flex-start;
+        }
+
+
+        img {
+            height:240px;
+            width: 425px;
+            object-fit: cover;
+        }
+    }
+}
+}

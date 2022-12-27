@@ -1,1 +1,344 @@
-*{color:red;}
+$text-color1:#DC8C13;
+$text-color2:#00A7E1;
+$text-color3:#CC4BC2;
+$text-color4:#59CD90;
+$text-color5:#B2264B;
+// Mise en page du one page
+html{
+    scroll-behavior: smooth;
+}
+
+.page-1{
+    
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../images/FondSite-Accueil.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+
+}
+.page-2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../images/FondSite-Nous.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.page-3{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/FondSite-Travaux.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.page-4{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../images/FondSite-NosOffres.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.page-5{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../images/FondSite-Contact.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+// SCSS COMPOSANTS 
+#haut-page3{
+    display: flex;
+    justify-content:center;
+.Liste{
+
+    width: 60%;
+}
+}
+#haut-page4{
+    display: flex;
+    justify-content:center;
+.Liste2{
+    width: 60%;
+}
+}
+
+// Titre en haut
+.Titre{
+    img{
+
+        height: 10em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white; 
+
+    
+    h1{
+        text-align: center;
+        font-family: 'bloominggrovealtboldbold';
+    }
+
+}
+//Trait sous Titre
+.Traitv{
+    display:flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 3em;
+}
+// Gestion et style du crops de la page
+.Placement-gen{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+        .Titre-place{
+            display:flex;
+            align-items: center;
+            color:white;
+            h3{
+                margin-left: -4em;
+                color:$text-color1
+            }
+            }
+    p{
+        width: 20%;
+        color:white;
+        margin-right: -20em;
+        margin-top: -3em;
+        padding-left: 0.7em;
+        border-left: solid 1px white;
+        font-size: 0.9em;
+    }
+    img{
+        height: 10em;
+    }
+}
+.Placement-gen2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 96%;
+        .Titre-place2{
+            display:flex;
+            align-items: center;
+            color:white;
+            h3{
+                margin-left: -4em;
+                color:$text-color1
+            }
+            }
+    p{
+        width: 20%;
+        color:white;
+        margin-right: -20em;
+        margin-top: -3em;
+        padding-left: 0.7em;
+        border-left: solid 1px white;
+        font-size: 0.9em;
+    }
+    img{
+        height: 10em;
+    }
+}
+.Placement-gen3{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 91%;
+        .Titre-place3{
+            display:flex;
+            align-items: center;
+            color:white;
+            h3{
+                margin-left: -4em;
+                margin-bottom: 1.5em;
+                color:$text-color1
+            }
+            }
+    p{
+        width: 20%;
+        color:white;
+        margin-right: -25em;
+        margin-top: -3em;
+        padding-left: 0.7em;
+        border-left: solid 1px white;
+        font-size: 0.9em;
+    }
+    img{
+        height: 10em;
+    }
+}
+// Image sur le coté gauche
+.Placement-left{
+    position: fixed;
+    top: 30%;
+}
+// Navigation
+.place-nav{
+    position: fixed;
+    right:2%;
+    top:35%;
+    display:inline-block;
+    text-align:end;
+    
+    .nav{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color1;
+            span{
+                border-bottom: 1px solid $text-color1;  
+            }
+        }
+    }
+    .trait-nav{
+         img{
+        height: 50px;
+        width: 1px;
+     }
+}
+}
+//fin navigation
+//fin page 1 
+
+
+//début P2 placement 
+
+.placement-middle{
+    display: flex;
+    justify-content:center;
+    
+    .bloc-présentation{
+        width: 20%;
+        margin-top: 4em;
+        img{
+            height: 15em;
+        }
+        h2 span{
+            color:$text-color2;
+            font-family:'bloominggrovealtboldbold';
+        }
+        h2{
+            color:white;
+        }
+        p{
+            color:white;
+        }
+        .placement-P-trait{
+            display:flex;
+            align-items: center;
+            
+            img{
+                height: 25em;
+                margin-right: 2em;
+            }
+        }
+        .Logo-réseaux{
+            h3{
+                color:white;            }
+            img{
+                height: 1em;
+            }
+        }
+    }
+
+}
+
+// fin Page 2
+
+
+//Page 3 
+
+.placement-bloc{
+    width: 78%;
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 3em;
+    margin-top:3em;
+    img{ width: 20em;}
+    .text-bloc{
+        color: #fff;
+        margin-left:1em;
+        h3{
+            margin-top:0;
+        }
+    }
+}
+.placement-bloc2{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    img{ width: 20em;}
+    .text-bloc{
+        color: #fff;
+        
+        margin-left:1em;
+        h3{
+            margin-top:0;
+        }
+    }
+}
+
+// fin page 3
+//page 4 
+
+
+// Page 5 
+// gestion des 5 bloc
+.all-blocP5{
+    display:flex;
+    justify-content:center;
+    margin-top: 0;
+
+    .blocP5{
+        margin: 5em;
+        margin-top:15em;
+
+        a{          
+            text-decoration: none;
+            color:white;
+            display: flex;
+            flex-direction: column;
+
+            img{ 
+                width: 10em;
+                margin-left: -1em;
+            }
+            p{
+                margin-top: 0;
+                text-align: center;
+            }
+        }  
+    }
+}
+// bloc en bas p5
+.bloc-bas-P5{
+    display:flex;
+    justify-content:center;
+    a{
+        display:flex;
+        align-items: center;
+        img{
+            padding: 1em;
+        }
+}
+}
+
+
+
