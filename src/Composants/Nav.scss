@@ -1,0 +1,60 @@
+$text-color1:#DC8C13;
+$text-color2:#00A7E1;
+$text-color3:#CC4BC2;
+$text-color4:#59CD90;
+$text-color5:#B2264B;
+
+// Navigation
+.placenav{
+    position: fixed;
+    right:2%;
+    top:35%;
+    display:inline-block;
+    text-align:end;
+    
+    .nav,.nav1,.nav2,.nav3,.nav4,.nav5{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color1;
+            span{
+                border-bottom: 1px solid $text-color1;  
+            }
+        }
+    }
+    .trait-nav{
+         img{
+        height: 50px;
+        width: 1px;
+     }
+}
+}
+
+
+// couleur scroll
+
+.placenav.scroll{
+    :hover{
+        color:$text-color2;
+        span{
+            border-bottom: 1px solid $text-color2;
+        }
+    }
+    
+}
+.placenav.scroll2{
+    :hover{
+        color:$text-color3;
+        span{
+            border-bottom: 1px solid $text-color3;
+        }
+    }
+}
+
+//fin navigation
