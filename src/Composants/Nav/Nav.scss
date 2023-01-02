@@ -4,7 +4,11 @@ $text-color3:#CC4BC2;
 $text-color4:#59CD90;
 $text-color5:#B2264B;
 
+
+
 // Navigation
+
+
 .placenav{
     position: fixed;
     right:2%;
@@ -12,7 +16,7 @@ $text-color5:#B2264B;
     display:inline-block;
     text-align:end;
     
-    .nav,.nav1,.nav2,.nav3,.nav4,.nav5{
+    .nav{
         text-decoration: none;
         list-style-type: none;
         color: rgb(255, 255, 255);
@@ -22,9 +26,9 @@ $text-color5:#B2264B;
             font-size: 12px;  
         }
         :hover{
-            color : $text-color1;
+            color : white;
             span{
-                border-bottom: 1px solid $text-color1;  
+                border-bottom: 1px solid white;  
             }
         }
     }
@@ -34,27 +38,6 @@ $text-color5:#B2264B;
         width: 1px;
      }
 }
-}
-
-
-// couleur scroll
-
-.placenav.scroll{
-    :hover{
-        color:$text-color2;
-        span{
-            border-bottom: 1px solid $text-color2;
-        }
-    }
-    
-}
-.placenav.scroll2{
-    :hover{
-        color:$text-color3;
-        span{
-            border-bottom: 1px solid $text-color3;
-        }
-    }
 }
 
 //fin navigation

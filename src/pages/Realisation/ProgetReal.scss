@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 15em;
+    padding-top: 10em;
 
     
     
@@ -11,7 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    text-decoration: none;          
+    text-decoration: none;     
+    margin: 0;     
     
     
     .img-box{

@@ -1,0 +1,48 @@
+.all{
+    background-image:url(./../../../images/FondSite-NosOffres.jpg);
+    height: 100vh;
+    
+    .Logop4{
+        height: 160px;
+        width: 200px;
+        margin-top: 2em;
+        margin-left: 2em;
+    }
+}
+.Temp-corp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+
+    .Temp-Slide{
+        margin-top: -8em;
+        h2{
+            color: #fff;
+            text-align: center;
+            width: 50%;
+            font-family:'bloominggrovealtboldbold';
+            font-size: 3em;
+            margin: 0;
+        }
+        .TraitOblique1{
+            position: absolute;
+            top:0%;
+            left:15%;
+        }
+        .Slide{
+            height: 580px;
+            width: 1050px;
+            border-radius: 50px 50px 50px 50px;
+        }
+        .TraitOblique2{
+            position: absolute;
+            bottom:10%;
+            right:17%
+        }
+    }
+}
+.bloc-bas-P4{
+    margin-top:6em;
+}

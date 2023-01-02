@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 // fichier de style
 import './home.scss'
 
@@ -26,10 +27,11 @@ import URLP2 from '../../images/UrlP2.png'
 import URLP3 from '../../images/UrlP3.png'
 import URLP4 from '../../images/UrlP4.png'
 // photo profil + projets
-import PhotoVide from '../../images/Photo-vide.png'
+import RectangleVide from '../../images/Rectanglevide.png'
 import PhotoVide2 from '../../images/Photo-vide2.png'
 import Emilien from '../../images/Emilien.png'
 import Jeremy from '../../images/Jeremy.png'
+import Bouton from '../../images/BoutonTemplates.png'
 // logo réseaux sociaux 
 import Behance from '../../images/Logo-behance.png'
 import Instagram from '../../images/Logo-instagram.png'
@@ -38,9 +40,9 @@ import Web from '../../images/Logo-web.png'
 import Linkedin from '../../images/Logo-linkedin.png'
 
 // Composant JS 
-import CartesProjet from '../../Composants/CarteReal.js'
-import CartesTemplates from '../../Composants/CarteTemp.js'
-import Nav from '../../Composants/Nav.js'
+import CartesProjet from '../Realisation/ProgetReal.js'
+import Nav from '../../Composants/Nav/Nav.js'
+
 
 
 
@@ -53,7 +55,6 @@ export default function Home() {
 
   return (
     <div className='All-page'>
-        
         <Nav/>
         <section className="page1" id="haut-page1">
         <header>
@@ -145,8 +146,46 @@ export default function Home() {
             </div>
         </section>
         <section className="page4" id='haut-page4'>
-            <div className='Liste2'>
-                <CartesTemplates/>
+            <div className='cart'>
+                <Link to='/vitrine'>
+                    <figure className="img-box">
+                        <figcaption className='text-box'> 
+                            <h3>Site Vitrine</h3> 
+                            <p>lorem ipsum dolor sit amet, con lorem ipsum dolor lorem ipsum dolor</p>
+                            </figcaption>
+                        <img src={RectangleVide}  alt='img-logment' className="img-all"></img>
+                        
+                        <div className='Bas-figure'>
+                        <h4> X templates disponibles</h4>
+                        <p>Adaptation de votre design : <br></br> <span>A partir de 700 euros</span></p>
+                        <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
+                        </div>
+                        <div> 
+                            <img className="bouton" src={Bouton} alt="image du contenu"/>
+                        </div>
+                    </figure>
+                </Link>
+            </div>
+            <div className='cart'> 
+            
+            <Link to='/e-commerce'>
+                    <figure className="img-box">
+                        <figcaption className='text-box'> 
+                            <h3>Site e-commerce</h3> 
+                            <p>lorem ipsum dolor sit amet, con lorem ipsum dolor lorem ipsum dolor</p>
+                            </figcaption>
+                        <img src={RectangleVide}  alt='img-logment' className="img-all"></img>
+                        
+                        <div className='Bas-figure'>
+                        <h4> X templates disponibles</h4>
+                        <p>Adaptation de votre design : <br></br> <span>A partir de 700 euros</span></p>
+                        <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
+                        </div>
+                        <div> 
+                            <img className="bouton" src={Bouton} alt="image du contenu"/>
+                        </div>
+                        </figure>
+            </Link>
             </div>
         </section>
         <section className="page5" id="haut-page5">

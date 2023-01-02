@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import Projets from './Projets.json'
-import './CarteReal.scss'
+import Projets from './Realisation.json'
+import './ProgetReal.scss'
 
 export default function Liste() {
   return (
@@ -9,7 +9,7 @@ export default function Liste() {
     {
         Projets.map( projet=>{
             return(
-                <Link to={`/Projet/${projet.id}`} className="cart" key={projet.id} >
+                <Link to={`/realisation/${projet.id}`} className="cart" key={projet.id} >
                     <figure className="img-box">
                       <img src={projet.cover}  alt='img-logment' className="img-all"></img>
                       <figcaption className='text-box'> 
