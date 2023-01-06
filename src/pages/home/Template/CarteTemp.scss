@@ -21,46 +21,60 @@ $text-color4:#59CD90;
     p{
         color: #fff;
         margin-left: 13em;
+        text-align: justify;
  
     }
-    img{
-        width: 445px;
-        height: 55px;
-        padding-left: 2em;
+    
+    .TraitV{
+        width: 2px;
+        height: 60px;
+        border-left: #fff 2px solid;
+        margin-left: 2em;
+        margin-right: 2em;
         
+        
+    }
+    .contact-template{
+        color:$text-color4;
+        
+        p{
+            font-size: 24px;
+            margin:0;
+            width: 200px;
+            color:$text-color4
+        }
     }
 }
     
-.all-cart{
+.all-cart2{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     
-.cart{
+.cart2{
 
-    height:340px;
+    height:421px;
     width: 515px;   
     margin-top: 5em;
-    margin-right: 2em;      
+    margin-right: 3em;
+        
     
     
-    .img-box{
+    .img-box2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
-    .text-box{
-        margin-left: -2.8em;
-        text-align: right;
-    }
-        h3{
+    h3{
             color:white;
-            text-align: right;
-            
+
         }
 
         img {
-            height:290px;
+            height:300px;
             width: 515px;
             object-fit: cover;
         }

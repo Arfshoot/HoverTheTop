@@ -5,9 +5,10 @@ import './home.scss'
 
 // image des logos de page
 import Logo from '../../images/Logo-home.png'
-import LogoP2   from '../../images/Logo-page2.png'
-import LogoP3 from '../../images/Logo-page3.png'
-import LogoP4 from '../../images/Logo-page4.png'
+import TitreQui from '../../images/Titresection2.png'
+import TitreReal from '../../images/Titresection3.png'
+import TitreTemplate from '../../images/Titresection4.png'
+import TitreContact from '../../images/Titresection5.png'
 // image vrac
 import Montagne from '../../images/Montagne-p1.png'
 import TraitV from '../../images/Trait.png'
@@ -23,14 +24,8 @@ import Button from '../../images/button-contact.png'
 import Satisfaction from '../../images/icon-satisfaction.png'
 import CouvVitrine from '../../images/couv-vitrine.png'
 import CouvEcommerce from '../../images/couv-ecommerce.png'
-// images url coté gauche
-import URL from '../../images/Url.png'
-import URLP2 from '../../images/UrlP2.png'
-import URLP3 from '../../images/UrlP3.png'
-import URLP4 from '../../images/UrlP4.png'
+
 // photo profil + projets
-import RectangleVide from '../../images/Rectanglevide.png'
-import PhotoVide2 from '../../images/Photo-vide2.png'
 import Emilien from '../../images/Emilien.png'
 import Jeremy from '../../images/Jeremy.png'
 import Bouton from '../../images/BoutonTemplates.png'
@@ -94,10 +89,12 @@ export default function Home() {
             </div>
         </main>
         </section>
-        <section className="page2" id="Qui-sommes-nous">
 
+        <section className="page2" id="Qui-sommes-nous">
+        <div><img src={TitreQui} className='titrepage2'/></div>
         <div className="placement-middle">
             <div className="bloc-présentation">
+                
             <div>
                 <img src= {Jeremy} alt='Portait'/>
             </div>
@@ -131,19 +128,28 @@ export default function Home() {
                                 <a  target='_blank' href='https://www.linkedin.com/in/emilien-grud%C3%A9-b27695131/' alt="Profil Linkedin"><img src={Linkedin}/></a>
                                 <a  target='_blank' href='https://www.instagram.com/graphic.scraick/' alt="Page instagram"><img src={Instagram}/></a>
                                 <a  target='_blank' href='https://www.behance.net/Scraick' alt="site personnel"><img src={Behance}/></a>
+                                
                             </div>
+
                 </div>
             </div>
             </div>
         </div>
+
         </section>
+
         <section className="page3" id="Nos-réalisations">
+        
             <div className='Liste'>
+            <div><img src={TitreReal} className='titrepage3'/></div>
                 <CartesProjet/>
             </div>
         </section>
+
         <section className="page4" id='Nos-offres'>
+        <div><img src={TitreTemplate} className='titrepage4'/></div>
             <div className='cart'>
+            
                 <Link to='/vitrine'>
                     <figure className="img-box">
                         <figcaption className='text-box'> 
@@ -156,20 +162,22 @@ export default function Home() {
                         <h4> Des templates disponibles</h4>
                         <p>Adaptation de votre design : <br></br> <span>A partir de 720 euros</span></p>
                         <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
+
                         </div>
-                        <div> 
-                            <img className="bouton" src={Bouton} alt="image du contenu"/>
-                        </div>
+                        <img className="bouton" src={Bouton} alt="image du contenu"/>
+
+                    
                     </figure>
+
                 </Link>
-            </div>
-            <div className='cart'> 
+            
+            
             
             <Link to='/e-commerce'>
                     <figure className="img-box">
                         <figcaption className='text-box'> 
                             <h3>Site e-commerce</h3> 
-                            <p>Si vous cherchez un site de vente en ligne, avec un catalogue,un espace client, sur un site clair et sécurisé, ces modèles sont fait pour vous !</p>
+                            <p>Si vous cherchez un site de vente en ligne, avec un catalogue, un espace client, sur un site clair et sécurisé, ces modèles sont fait pour vous !</p>
                             </figcaption>
                         <img src={CouvEcommerce}  alt='img-logment' className="img-all"></img>
                         
@@ -178,15 +186,18 @@ export default function Home() {
                         <p>Adaptation de votre design : <br></br> <span>A partir de XXX euros</span></p>
                         <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
                         </div>
-                        <div> 
-                            <img className="bouton" src={Bouton} alt="image du contenu"/>
-                        </div>
+                        <img className="bouton" src={Bouton} alt="image du contenu"/>
                         </figure>
+                        
+                            
+                        
             </Link>
             </div>
-        </section>
-        <section className="page5" id="Contact">
 
+        </section>
+
+        <section className="page5" id="Contact">
+        <div><img src={TitreContact} className='titrepage5'/></div>
             <div className="all-blocP5"> 
                 <div className="blocP5"> 
                     

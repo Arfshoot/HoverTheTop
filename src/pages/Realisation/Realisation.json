@@ -1,7 +1,7 @@
 [
 	{
-		"id": "Orange - Serious Game",
-		"title": "Orange - Serious Game",
+		"id": "Orange",
+		"title": "Orange",
 		"cover": "https://arf-dev.s3.eu-west-3.amazonaws.com/Orange+Emilien/_presentation+HTTP+(1).png",
 		"pictures": [
 			"https://arf-dev.s3.eu-west-3.amazonaws.com/Orange+Emilien/_presentation+HTTP+(1).png",
@@ -59,8 +59,8 @@
 		
 	},
 	{
-		"id": "Tribord, présentation d'application",
-		"title": "Tribord, présentation d'application",
+		"id": "Tribord",
+		"title": "Tribord",
 		"cover": "https://arf-dev.s3.eu-west-3.amazonaws.com/Tribors+Application/Plan+de+travail+1-8.png",
 		"pictures": [
 			"https://arf-dev.s3.eu-west-3.amazonaws.com/Tribors+Application/Plan+de+travail+1-8.png",

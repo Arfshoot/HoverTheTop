@@ -32,6 +32,70 @@ $text-color5:#B2264B;
             }
         }
     }
+    .nav2{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color2;
+            span{
+                border-bottom: 1px solid $text-color2;  
+            }
+        }
+    }
+    .nav3{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color3;
+            span{
+                border-bottom: 1px solid $text-color3;  
+            }
+        }
+    }
+    .nav4{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color4;
+            span{
+                border-bottom: 1px solid $text-color4;  
+            }
+        }
+    }
+    .nav5{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : $text-color5;
+            span{
+                border-bottom: 1px solid $text-color5;  
+            }
+        }
+    }
     .trait-nav{
          img{
         height: 50px;

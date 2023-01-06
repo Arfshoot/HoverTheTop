@@ -36,13 +36,13 @@ window.addEventListener('scroll', () => {
         <ul>
           <a href="#Accueil" className="nav"><li><span>Accueil</span> <i class="fa-solid fa-circle"></i></li></a>
           <div className="trait-nav"><img src={TraitV} /></div>
-          <a href="#Qui-sommes-nous" className="nav"><li><span>Qui sommes nous?</span> <i class="fa-solid fa-circle"></i></li></a>
+          <a href="#Qui-sommes-nous" className="nav2"><li><span>Qui sommes nous?</span> <i class="fa-solid fa-circle"></i></li></a>
           <div className="trait-nav"><img src={TraitV} /></div>
-          <a href="#Nos-réalisations" className="nav"><li><span>Nos réalisations</span> <i class="fa-solid fa-circle"></i></li></a>
+          <a href="#Nos-réalisations" className="nav3"><li><span>Nos réalisations</span> <i class="fa-solid fa-circle"></i></li></a>
           <div className="trait-nav"><img src={TraitV} /></div>
-          <a href="#Nos-offres" className="nav"><li><span>Nos offres</span> <i class="fa-solid fa-circle"></i></li></a>
+          <a href="#Nos-offres" className="nav4"><li><span>Nos offres</span> <i class="fa-solid fa-circle"></i></li></a>
           <div className="trait-nav"><img src={TraitV} /></div>
-          <a href="#Contact" className="nav"><li><span>Contact</span> <i class="fa-solid fa-circle"></i></li></a>
+          <a href="#Contact" className="nav5"><li><span>Contact</span> <i class="fa-solid fa-circle"></i></li></a>
         </ul>
 </div>
   )
