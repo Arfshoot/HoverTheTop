@@ -21,6 +21,8 @@ import Head from '../../images/icon-head.png'
 import Http from '../../images/icon-http.png'
 import Button from '../../images/button-contact.png'
 import Satisfaction from '../../images/icon-satisfaction.png'
+import CouvVitrine from '../../images/couv-vitrine.png'
+import CouvEcommerce from '../../images/couv-ecommerce.png'
 // images url coté gauche
 import URL from '../../images/Url.png'
 import URLP2 from '../../images/UrlP2.png'
@@ -41,31 +43,30 @@ import Linkedin from '../../images/Logo-linkedin.png'
 
 // Composant JS 
 import CartesProjet from '../Realisation/ProgetReal.js'
-import Nav from '../../Composants/Nav/Nav.js'
-
-
-
-
-
+import Nav from '../../Composants/Nav/Nav'
 
 
 
 
 export default function Home() {
+    
 
+      
+           
   return (
     <div className='All-page'>
         <Nav/>
-        <section className="page1" id="haut-page1">
+        
+        <section className="page1" id="Accueil">
         <header>
-            <div className="Logo">
-            <a href='/Home' id="haut-page1"><img src={Logo} alt="Logo" /></a>
+            <div>
+            <a href='#Accueil' className='Logo'><img src={Logo} ></img></a>
             </div>
         </header>
         <main>
             <div className="Titre">
                 <img src={Montagne} alt="Montagne" />
-                <h1>Survolez des sommets <br></br> Avec un site d'exception</h1>
+                <h1>Survolez des sommets <br></br> avec un site d'exception</h1>
             </div>
             <div className="Traitv">
                 <img src={TraitV} alt="trait" />
@@ -82,7 +83,7 @@ export default function Home() {
                     <img src={Mobile}></img>
                     <h3>Développement web & mobile</h3>
                 </div>
-                <p>Nous créons des sites web sur mesure pour vous aider à vous démarquer de la concurrence, améliorer l'expérience de vos clients et valoriser vos produits. Tout en le rendant 100% responsive</p>
+                <p>Nous créons des sites web sur mesure 100% responsive pour vous aider à vous démarquer de la concurrence, améliorer l'expérience de vos clients et valoriser vos produits.</p>
             </div>
             <div className="Placement-gen3">
                 <div className="Titre-place3">
@@ -91,20 +92,16 @@ export default function Home() {
                 </div>
                 <p>Le référencement a pour objectif d'intégrer, de positionner et de maintenir votre site internet en tête des classements des moteurs de recherche afin de générer le plus fort trafic.</p>
             </div>
-            <div className="Placement-left"> 
-                <img src={URL} alt="Image-left"/>
-            </div>
-
         </main>
         </section>
-        <section className="page2" id="haut-page2">
+        <section className="page2" id="Qui-sommes-nous">
 
         <div className="placement-middle">
             <div className="bloc-présentation">
             <div>
                 <img src= {Jeremy} alt='Portait'/>
             </div>
-            <div>
+            <div >
                 <h2><span>//</span> Jérémy Vigier</h2>
                 <div className='placement-P-trait'>
                         <p>Developpeur Web fullStack diplomé en 2022, développement, fonctionnalitées, maintenance, gestion de base de donnée, Seo  ...</p>
@@ -140,24 +137,24 @@ export default function Home() {
             </div>
         </div>
         </section>
-        <section className="page3" id="haut-page3">
+        <section className="page3" id="Nos-réalisations">
             <div className='Liste'>
                 <CartesProjet/>
             </div>
         </section>
-        <section className="page4" id='haut-page4'>
+        <section className="page4" id='Nos-offres'>
             <div className='cart'>
                 <Link to='/vitrine'>
                     <figure className="img-box">
                         <figcaption className='text-box'> 
                             <h3>Site Vitrine</h3> 
-                            <p>lorem ipsum dolor sit amet, con lorem ipsum dolor lorem ipsum dolor</p>
+                            <p>Si vous cherchez un site simple de présentation pour votre entreprise, allez voir les différents modèles que nous proposons !</p>
                             </figcaption>
-                        <img src={RectangleVide}  alt='img-logment' className="img-all"></img>
+                        <img src={CouvVitrine}  alt='img-logment' className="img-all"></img>
                         
                         <div className='Bas-figure'>
-                        <h4> X templates disponibles</h4>
-                        <p>Adaptation de votre design : <br></br> <span>A partir de 700 euros</span></p>
+                        <h4> Des templates disponibles</h4>
+                        <p>Adaptation de votre design : <br></br> <span>A partir de 720 euros</span></p>
                         <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
                         </div>
                         <div> 
@@ -172,13 +169,13 @@ export default function Home() {
                     <figure className="img-box">
                         <figcaption className='text-box'> 
                             <h3>Site e-commerce</h3> 
-                            <p>lorem ipsum dolor sit amet, con lorem ipsum dolor lorem ipsum dolor</p>
+                            <p>Si vous cherchez un site de vente en ligne, avec un catalogue,un espace client, sur un site clair et sécurisé, ces modèles sont fait pour vous !</p>
                             </figcaption>
-                        <img src={RectangleVide}  alt='img-logment' className="img-all"></img>
+                        <img src={CouvEcommerce}  alt='img-logment' className="img-all"></img>
                         
                         <div className='Bas-figure'>
-                        <h4> X templates disponibles</h4>
-                        <p>Adaptation de votre design : <br></br> <span>A partir de 700 euros</span></p>
+                        <h4> Des templates disponibles</h4>
+                        <p>Adaptation de votre design : <br></br> <span>A partir de XXX euros</span></p>
                         <p>Création du design / ajout de fonctionnalité :  <br></br> <span>Tarifs selon les besoins</span></p>
                         </div>
                         <div> 
@@ -188,7 +185,7 @@ export default function Home() {
             </Link>
             </div>
         </section>
-        <section className="page5" id="haut-page5">
+        <section className="page5" id="Contact">
 
             <div className="all-blocP5"> 
                 <div className="blocP5"> 

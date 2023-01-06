@@ -3,24 +3,45 @@ $text-color4:#59CD90;
 
 .CarteTempE , .CarteTempV{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 5em;
+    flex-direction: column;
     height: 100vh;
     background-image:url(../../../images/FondSite-NosOffres.jpg);
-    
+    .Logop4-2{
+        width: 420px;
+        height:97px;
+        margin-top: 2em;
+        margin-left: 2em;
 
-.cart{
+    }
+    .desc-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 88%;
+    p{
+        color: #fff;
+        margin-left: 13em;
+ 
+    }
+    img{
+        width: 445px;
+        height: 55px;
+        padding-left: 2em;
+        
+    }
+}
+    
+.all-cart{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-decoration: none;
-    height:400px;
-    width: 500px;   
-    margin-top: 0;
-    margin-right: 0;      
+    flex-direction: row;
+    justify-content: center;
+    
+.cart{
+
+    height:340px;
+    width: 515px;   
+    margin-top: 5em;
+    margin-right: 2em;      
     
     
     .img-box{
@@ -28,28 +49,31 @@ $text-color4:#59CD90;
         flex-direction: column;
         align-items: center;
 
-        
-       .bouton{
-        width: 423px;
-        height: 57px;
-       }
-
+    .text-box{
+        margin-left: -2.8em;
+        text-align: right;
+    }
         h3{
             color:white;
-            text-align: flex-start;
+            text-align: right;
+            
         }
-        p{
-            color:white;
-        }
-
 
         img {
-            height:240px;
-            width: 425px;
+            height:290px;
+            width: 515px;
             object-fit: cover;
         }
 
     }
+}
+.voirmaquette{
+    display: flex;    
+    justify-content: center;
+    height:55px;
+    margin-top: 3em;
+    margin-left:-1.2em;
+}
 }
 }
 

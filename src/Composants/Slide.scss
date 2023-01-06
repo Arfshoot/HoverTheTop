@@ -4,16 +4,16 @@ $text-color4:#59CD90;
 
 .number__styles{
     display: flex;
-    width: 100%;
+    width: 4%;
     justify-content: center;
     height: 90%;
     align-items: flex-end;
     font-size: 17px;
     position: absolute;
-    top: 15%;
-    
-    color: $text-color3;
-    font-family: 'bloominggrovealtboldbold';
+    bottom:1%;
+
+    color: #505b5e;
+    font-weight: bold;
     
 }
 .slider__styles{

@@ -25,11 +25,12 @@
         h2{
             color: #fff;
             text-align: center;
-            width: 60%;
-            font-family:'bloominggrovealtboldbold';
-            font-size: 2em;
+            width: 50%;
+            font-size: 1.5em;
             margin: 0;
+            margin-bottom: 0.5em;
         }
+
         .TraitOblique1{
             position: absolute;
             top:10%;
@@ -53,13 +54,16 @@
 .bloc-bas-P4{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    margin-top:2em;
-    p{
-        width: 1000px;
-        color:white;
+    margin-top:1em;
+    z-index: 1;    
+    .bloc-bas-text{
 
-        
+        width: 900px;
+        color:white;
+        margin-left: -6em;
+        text-align: justify;
+ 
     }
 }

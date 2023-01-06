@@ -4,10 +4,20 @@ $text-color3:#CC4BC2;
 $text-color4:#59CD90;
 $text-color5:#B2264B;
 // Mise en page du one page
-html{
+*{
     scroll-behavior: smooth;
-}
 
+    box-sizing: border-box;
+
+}
+.All-page{
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+.All-page > section {
+    scroll-snap-align: end;
+}
 .page1{
     
     height: 100%;
@@ -49,8 +59,45 @@ html{
     background-size: cover;
     background-attachment: fixed;
 }
+// Navigation
+
+
+.placenav{
+    position: fixed;
+    right:2%;
+    top:35%;
+    display:inline-block;
+    text-align:end;
+    
+    .nav{
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        i{
+            margin-right:-10px;
+            padding: 5px;
+            font-size: 12px;  
+        }
+        :hover{
+            color : white;
+            span{
+                border-bottom: 1px solid white
+                ;  
+            }
+        }
+    }
+    .trait-nav{
+         img{
+        height: 50px;
+        width: 1px;
+     }
+}
+}
+
+
+//fin navigation
 // SCSS COMPOSANTS 
-#haut-page3{
+#Nos-réalisations{
     display: flex;
     justify-content:center;
 .Liste{
@@ -58,7 +105,7 @@ html{
     width: 60%;
 }
 }
-#haut-page4{
+#Nos-offres{
     display: flex;
     justify-content:center;
 .Liste2{
@@ -66,16 +113,14 @@ html{
 }
 }
 
-// LOGO 
-.Logo {
-    position: fixed;
-    width: 400px;
-    height: 110px;
-    margin-top: 2em;
+// Logo 
+.Logo{
+    width: 350px;
+    height:97px;
     margin-left: 2em;
-    
+    margin-top: 2em;
+    position: fixed;
 }
-
 // Titre en haut
 .Titre{
     img{
@@ -94,8 +139,9 @@ html{
 
     h1{
         font-size: 2em;
+        font-weight: 300;
         text-align: center;
-        font-family: 'bloominggrovealtboldbold';
+        
     }
 
 }
@@ -195,11 +241,7 @@ html{
         width: 190px;
     }
 }
-// Image sur le coté gauche
-.Placement-left{
-    position: fixed;
-    top: 30%;
-}
+
 
 //fin page 1 
 
@@ -212,7 +254,7 @@ html{
     align-items: center;
     
     .bloc-présentation{
-        width: 20%;
+        width: 22%;
         margin-top: 10em;
         img{
             height: 15em;
@@ -228,11 +270,12 @@ html{
             color:white;
             margin-top: 0;
         }
+
         .placement-P-trait{
             display:flex;
             align-items: flex-start;
             flex-direction: column;
-            margin-right: 1em;
+            margin-right: 2em;
             padding-left: 1em;
             border-left: 1px solid #ffffff;
             
@@ -359,21 +402,25 @@ html{
 .all-blocP5{
     display:flex;
     justify-content:center;
+    align-items: center;
     margin-top: 0;
+    
 
     .blocP5{
         
         margin-top:20em;
-        margin-right: 10em;
+        margin-left: 4em;
+        margin-right:em;
+        width: 10%;
         
         img{ 
             width: 11em;
-            margin-left: -1em;
+            
             
 
         }
         p{          
-            text-decoration: none;
+            
             color:white;
             text-align: center;
             margin: 0;

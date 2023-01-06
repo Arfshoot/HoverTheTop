@@ -26,9 +26,9 @@ $text-color5:#B2264B;
             font-size: 12px;  
         }
         :hover{
-            color : white;
+            color : $text-color1;
             span{
-                border-bottom: 1px solid white;  
+                border-bottom: 1px solid $text-color1;  
             }
         }
     }
@@ -38,6 +38,50 @@ $text-color5:#B2264B;
         width: 1px;
      }
 }
+}
+.placenav.scroll{
+    .nav{
+        :hover{
+            color: $text-color2;
+            span{
+                border-bottom: 1px solid $text-color2;
+
+            }
+        }
+    }
+}
+.placenav.scroll2{
+    .nav{
+        :hover{
+            color: $text-color3;
+            span{
+                border-bottom: 1px solid $text-color3;
+
+            }
+        }
+    }
+}
+.placenav.scroll3{
+    .nav{
+        :hover{
+            color: $text-color4;
+            span{
+                border-bottom: 1px solid $text-color4;
+
+            }
+        }
+    }
+}
+.placenav.scroll4{
+    .nav{
+        :hover{
+            color: $text-color5;
+            span{
+                border-bottom: 1px solid $text-color5;
+
+            }
+        }
+    }
 }
 
 //fin navigation

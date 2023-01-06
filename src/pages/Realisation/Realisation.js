@@ -39,15 +39,13 @@ export default function Realisations() {
                       <h2>{realisation.title}</h2>
                     </div>
 
-                      <Slide data={realisation.pictures} />
+                      <Slide data={realisation.pictures}/>
 
                    </div>
                 <div className="bloc-bas-P4">
-                    <a target='_blank' href={realisation.url}>
-                        <img src={Button} alt='Boutton envoyant sur le site'/>
-                        
-                    </a>
+                    <div className="bloc-bas-text">
                     <p>{realisation.description}</p>
+                    </div>
                 </div>
                 </div>
 
