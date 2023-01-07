@@ -22,7 +22,7 @@ $text-color5:#B2264B;
     
     height: 100%;
     width: 100%;
-    background-image: url(../../images/FondSite-Accueil.jpg);
+    background-image: url(../../images/FondSite-Accueil.webp);
     background-size: cover;
     background-attachment: fixed;
     
@@ -31,7 +31,7 @@ $text-color5:#B2264B;
 .page2{
     height: 100vh;
     width: 100%;
-    background-image: url(../../images/FondSite-Nous.jpg);
+    background-image: url(../../images/FondSite-Nous.webp);
     background-size: cover;
     background-attachment: fixed;
 
@@ -39,7 +39,7 @@ $text-color5:#B2264B;
 .page3{
     height: 100%;
     width: 100%;
-    background-image: url(../../images/FondSite-Travaux.jpg);
+    background-image: url(../../images/FondSite-Travaux.webp);
     background-size: cover;
     background-attachment: fixed;
     
@@ -47,7 +47,7 @@ $text-color5:#B2264B;
 .page4{
     height: 100vh;
     width: 100%;
-    background-image: url(../../images/FondSite-NosOffres.jpg);
+    background-image: url(../../images/FondSite-NosOffres.webp);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -55,7 +55,7 @@ $text-color5:#B2264B;
 .page5{
     height: 100vh;
     width: 100%;
-    background-image: url(../../images/FondSite-Contact.png);
+    background-image: url(../../images/FondSite-Contact.webp);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -93,17 +93,21 @@ $text-color5:#B2264B;
     margin-top: 2.9em;
 }
 .titrepage3{
-   
+    display: flex;
+    flex-direction: row;
     width: 350px;
     height: 70px;
-    
-    margin-top: 2.9em;
+    margin-left: 24em;
+    margin-top: 3.1em;
 }
 .titrepage4{
+    display: flex;
+    flex-direction: row;
     width: 350px;
     height: 70px;
-    margin-left: -34.5em;
-    margin-top: 3.1em;
+    margin-left: 24em;
+    margin-top: 3em;
+  
 
 }
 .titrepage5{
@@ -117,7 +121,7 @@ $text-color5:#B2264B;
     img{
 
         height: 245px;
-        width: 20%;
+        width: 420px;
         display: flex;
         align-items: center;
         margin-top: 20em;
@@ -304,118 +308,53 @@ $text-color5:#B2264B;
 }
 
 // fin Page 2
+//page 3
+.Liste{
 
-
-//Page 3 
-
-.placement-bloc{
-    width: 78%;
-    display: flex;
-    justify-content:flex-end;
-    margin-bottom: 3em;
-    margin-top:3em;
-    img{ width: 20em;}
-    .text-bloc{
-        color: #fff;
-        margin-left:1em;
-        h3{
-            margin-top:0;
-        }
-    }
-}
-.placement-bloc2{
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    img{ width: 20em;}
-    .text-bloc{
-        color: #fff;
-        
-        margin-left:1em;
-        h3{
-            margin-top:0;
-        }
-    }
-}
-.placement-coté-p3{
-    position: absolute;
-    top:320%;
-    left: 0;
+    margin-top: 12em;
     
 }
-
-// fin page 3
+//fin page 3
 //page 4 
-.cart{
+.all-cartp4{
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    flex-wrap: wrap;
-    text-decoration: none;  
-    margin-top: 7em;
-    margin-left: -30em;
-    
-    
-
-
-    
-
-    a{
-        text-decoration:none
-    }        
-    
-    
-    .img-box{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: -45em;
+    width: 100%;
+    .cartp4{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 425px;
-        height: 550px;
-        margin: 1em;
         margin-right: 5em;
-        .bouton{
-        
-            width: 300px;
-            height: 57px;
-            margin-top: 2em;
-           }
-
-        h3{
-            color:white;
-            text-align: flex-start;
-             
+        a{
+            text-decoration: none;
         }
-        p{
-            color:white;
-            text-align: justify;
+        .text-box{
+            
+            h3{
+                color:$text-color4;
+            }
+            p{
+                color:white;
+            }
         }
-
-
-        img {
-            height:240px;
-            width: 425px;
-            object-fit: cover;
+        .Bas-figure{
+            h4{
+                color: $text-color4;
+            }
+            p{
+                color: #ffffff;
+                span{
+                    color:$text-color4;
+                }
+            }
         }
-
     }
-    .Bas-figure{
-        width: 100%;
-        h4{
-            color: $text-color4;
-        }
-        p span{
-            color :$text-color4;
-        }
-
-    }
-
-
-
 }
 
-
-
+//fin page 4
 // Page 5 
 // gestion des 5 bloc
 .all-blocP5{

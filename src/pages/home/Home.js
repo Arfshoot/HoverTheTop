@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // fichier de style
 import './home.scss'
 
+
 // image des logos de page
 import Logo from '../../images/Logo-home.png'
 import TitreQui from '../../images/Titresection2.png'
@@ -50,6 +51,7 @@ export default function Home() {
            
   return (
     <div className='All-page'>
+        <main>
         <Nav/>
         
         <section className="page1" id="Accueil">
@@ -140,17 +142,22 @@ export default function Home() {
 
         <section className="page3" id="Nos-réalisations">
         
+            
+            <div className='titrepage3'><img src={TitreReal} /></div>
             <div className='Liste'>
-            <div><img src={TitreReal} className='titrepage3'/></div>
                 <CartesProjet/>
             </div>
         </section>
 
         <section className="page4" id='Nos-offres'>
-        <div><img src={TitreTemplate} className='titrepage4'/></div>
-            <div className='cart'>
+            <div className='titrepage4'>
+                <img src={TitreTemplate}  />
+            </div>
+        <div className='all-cartp4'>
+            <div className='cartp4'>
             
                 <Link to='/vitrine'>
+
                     <figure className="img-box">
                         <figcaption className='text-box'> 
                             <h3>Site Vitrine</h3> 
@@ -170,9 +177,9 @@ export default function Home() {
                     </figure>
 
                 </Link>
+                </div>
             
-            
-            
+                <div className='cartp4'>
             <Link to='/e-commerce'>
                     <figure className="img-box">
                         <figcaption className='text-box'> 
@@ -192,6 +199,7 @@ export default function Home() {
                             
                         
             </Link>
+            </div>
             </div>
 
         </section>
@@ -232,6 +240,7 @@ export default function Home() {
                 </a>
             </div>
         </section>
+        </main>
     </div>
   )
 }
